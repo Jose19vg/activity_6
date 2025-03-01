@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SolicitudController; // Asegúrate de importar el controlador
+use App\Http\Controllers\SolicitudController; // Importa el controlador
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +13,7 @@ use App\Http\Controllers\SolicitudController; // Asegúrate de importar el contr
 |
 */
 
-// Ruta por defecto (opcional, puedes quitarla si no la necesitas)
+// Ruta de bienvenida (puedes eliminarla si no la usas)
 Route::get('/', function () {
     return view('welcome');
 });
