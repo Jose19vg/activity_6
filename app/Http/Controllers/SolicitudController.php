@@ -11,7 +11,7 @@ class SolicitudController extends Controller
      */
     public function index()
     {
-        return view('index'); // Asegúrate de crear resources/views/index.blade.php
+        return view('index'); 
     }
 
     /**
@@ -19,7 +19,7 @@ class SolicitudController extends Controller
      */
     public function create()
     {
-        return view('create'); // Asegúrate de crear resources/views/create.blade.php
+        return view('create'); 
     }
 
     /**
@@ -27,6 +27,6 @@ class SolicitudController extends Controller
      */
     public function edit($id)
     {
-        return view('edit'); // Asegúrate de crear resources/views/edit.blade.php
+        return view('edit'); 
     }
 }
