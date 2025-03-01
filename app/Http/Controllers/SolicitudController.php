@@ -28,7 +28,7 @@ class SolicitudController extends Controller
     public function edit($id)
     {
         // La función sigue existiendo pero no carga una vista
-        return "Edit path for product ID: " . $id;
+        return "Ruta de edición para el producto con ID: " . $id;
     }
     
 }
