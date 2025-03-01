@@ -1,18 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SolicitudController; // Asegúrate de importar el controlador
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Aquí es donde puedes registrar rutas web para tu aplicación. Estas
+| rutas son cargadas por RouteServiceProvider y contienen el middleware "web".
 |
 */
 
+// Ruta por defecto (opcional, puedes quitarla si no la necesitas)
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Rutas para el controlador de solicitudes
+Route::resource('solicitudes', SolicitudController::class);
