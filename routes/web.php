@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 // Rutas para el controlador de solicitudes
 Route::resource('solicitudes', SolicitudController::class);
+
+// Ruta específica para editar sin mostrar la vista
+Route::get('/solicitudes/{id}/edit', [SolicitudController::class, 'edit'])->name('solicitudes.edit');
